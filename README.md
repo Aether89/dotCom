@@ -50,3 +50,9 @@ bun run build
 ### Customize configuration
 
 See [Configuration Reference](https://vitejs.dev/config/).
+
+## Adding new languages
+To add a language create a json for it in `src/i18n/`  
+Then import it in `src/plugins/vue-i18n.ts` then assign it.
+
+
