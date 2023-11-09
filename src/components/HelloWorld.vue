@@ -5,7 +5,7 @@
 
       <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
 
-      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
+      <h1 class="text-h2 font-weight-bold">{{ $t("message.hello") }}</h1>
 
       <div class="py-14" />
 
@@ -31,7 +31,7 @@
         <v-col cols="auto">
           <v-btn
             color="primary"
-            href="https://vuetifyjs.com/introduction/why-vuetify/#feature-guides"
+            @click="langSwitch"
             min-width="228"
             rel="noopener noreferrer"
             size="x-large"
@@ -71,5 +71,22 @@
 </template>
 
 <script setup lang="ts">
-  //
+import vuetify from '@/plugins/vuetify';
+
+
+</script>
+
+<script lang="ts">
+  export default {
+    methods: {
+      langSwitch(){
+        const locale = this.$vuetify.locale.current
+
+        locale === 'en' ? this.$vuetify.locale.current = 'fr' : this.$vuetify.locale.current = 'en'
+      }
+    },
+    mounted() {
+      console.log(this.$vuetify.locale.current)
+    },
+  }
 </script>
