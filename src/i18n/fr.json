@@ -1,5 +1,9 @@
 {
     "fr": {
+      "global": {
+        "owner": "Aether89",
+        "sitetitle": "Hub Internet d’Aether89"
+      },
       "message": {
         "hello": "Bonjour tout le monde 🇫🇷"
       }

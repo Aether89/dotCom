@@ -1,5 +1,9 @@
 {
     "en": {
+      "global": {
+        "owner": "Aether89",
+        "sitetitle": "Aether89's Internet Hub"
+      },
       "message": {
         "hello": "hello world 🇬🇧"
       }
