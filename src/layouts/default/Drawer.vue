@@ -16,11 +16,3 @@
             <v-list-item nav prepend-icon="mdi-license" :title="$t('global.credits')" value="credits" />
           </v-list>
   </template>
-
-<script lang="ts">
-export default {
-  data () {
-    //
-  },
-}
-</script>

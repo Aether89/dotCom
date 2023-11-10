@@ -2,7 +2,6 @@
     "default": {
         "dark": false,
         "colors": {
-            "backgroundColourName": "black",
             "background": "#000000",
             "surface": "#FFFFFF",
             "primary": "#6200EE",
@@ -13,13 +12,9 @@
             "info": "#2196F3",
             "success": "#4CAF50",
             "warning": "#FB8C00",
-            "headerColourName": "grey-darken-3",
             "headerColour": "#424242",
-            "navColourName": "blue-darken-1",
             "navColour": "#1E88E5",
-            "canvasColourName": "grey-darken-4",
             "canvasColour": "212121",
-            "footerColourName": "black",
             "footerColour": "#000000"
         }
     }

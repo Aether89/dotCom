@@ -1,11 +1,11 @@
 <template>
-  <v-layout class="rounded rounded-md mx-6 mt-6">
+  <v-layout :class="layoutClass">
 
     <v-app-bar class="px-4" color="headerColour" flat>
       <strong>{{ $t("global.sitetitle") }}</strong>
       <v-spacer />
       <v-btn @click="langSwitch" prepend-icon="mdi-translate">
-        {{ $t("global.language") }}
+        {{ language }}
       </v-btn>
     </v-app-bar>
 
@@ -18,13 +18,16 @@
     </v-main>
 
   </v-layout>
+
   <default-footer />
+  
 </template>
 
 <script lang="ts" setup>
 import DefaultView from './View.vue'
 import DefaultFooter from './Footer.vue'
 import DefaultDrawer from './Drawer.vue'
+
 
 </script>
 
@@ -41,11 +44,24 @@ export default {
       const locale = this.$vuetify.locale.current
 
       locale === 'en' ? this.$vuetify.locale.current = 'fr' : this.$vuetify.locale.current = 'en'
+      document.title = this.$t('global.sitetitle');
+
     }
   },
+  computed: {
+    smAndDown() {
+      return this.$vuetify.display.smAndDown ? true : false;
+    },
+    language() {
+      return this.smAndDown ? this.$t('global.language.shortname') : this.$t('global.language.fullname')
+    },
+    layoutClass() {
+      const size = this.smAndDown ? 2 : 6;
+      return 'rounded rounded-md mx-' + size + ' mt-' + size;
+    },
+  },
   mounted() {
-    console.log(this.$vuetify.locale.current)
-    console.log(this.$vuetify.theme.themes)
+    //
   },
 }
 </script>

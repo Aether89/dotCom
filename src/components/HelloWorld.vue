@@ -16,7 +16,7 @@
             target="_blank" variant="flat">
             <v-icon icon="mdi-translate" size="large" start />
 
-            {{ $t("global.language") }}
+            {{ $t("global.language.fullname") }}
           </v-btn>
         </v-col>
 
@@ -36,10 +36,6 @@ export default {
 
       locale === 'en' ? this.$vuetify.locale.current = 'fr' : this.$vuetify.locale.current = 'en'
     }
-  },
-  mounted() {
-    console.log(this.$vuetify.locale.current)
-    console.log(this.$vuetify.theme.themes)
   },
 }
 </script>

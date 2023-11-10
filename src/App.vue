@@ -4,6 +4,11 @@
   </v-app>
 </template>
 
-<script setup lang="ts">
-  //
+<script lang="ts">
+  export default {
+  name: 'MyComponent',
+  mounted() {
+    document.title = this.$t('global.sitetitle');
+  }
+}
 </script>

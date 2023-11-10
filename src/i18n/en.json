@@ -3,7 +3,10 @@
     "global": {
       "owner": "Aether89",
       "sitetitle": "Aether89's Internet Hub",
-      "language": "English 🇬🇧",
+      "language": {
+        "fullname": "English",
+        "shortname": "EN"
+      },
       "aboutme": "About Me",
       "credits": "Credits",
       "skills": "Skills",

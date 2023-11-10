@@ -3,7 +3,10 @@
     "global": {
       "owner": "Aether89",
       "sitetitle": "Hub Internet d’Aether89",
-      "language": "Français 🇫🇷",
+      "language": {
+        "fullname": "Français",
+        "shortname": "FR"
+      },
       "aboutme": "À propos de moi",
       "credits": "Crédits",
       "skills": "Compétences",
