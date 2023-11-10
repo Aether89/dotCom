@@ -1,11 +1,19 @@
 {
-    "en": {
-      "global": {
-        "owner": "Aether89",
-        "sitetitle": "Aether89's Internet Hub"
-      },
-      "message": {
-        "hello": "hello world 🇬🇧"
-      }
+  "en": {
+    "global": {
+      "owner": "Aether89",
+      "sitetitle": "Aether89's Internet Hub",
+      "language": "English 🇬🇧",
+      "aboutme": "About Me",
+      "credits": "Credits",
+      "skills": "Skills",
+      "programs-n-applications": "Programs and Applications",
+      "mods-n-tools": "Mods and Tools",
+      "websites": "Websites",
+      "oldsites": "Old Site"
+    },
+    "message": {
+      "hello": "hello world 🇬🇧"
     }
+  }
 }

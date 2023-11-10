@@ -1,7 +1,9 @@
-{   "default": {
+{
+    "default": {
         "dark": false,
         "colors": {
-            "background": "#212121",
+            "backgroundColourName": "black",
+            "background": "#000000",
             "surface": "#FFFFFF",
             "primary": "#6200EE",
             "primary-darken-1": "#3700B3",
@@ -11,9 +13,14 @@
             "info": "#2196F3",
             "success": "#4CAF50",
             "warning": "#FB8C00",
-            "headerColour": "#000000",
-            "footerColour": "#000000",
-            "navColour": "#1E88E5"
+            "headerColourName": "grey-darken-3",
+            "headerColour": "#424242",
+            "navColourName": "blue-darken-1",
+            "navColour": "#1E88E5",
+            "canvasColourName": "grey-darken-4",
+            "canvasColour": "212121",
+            "footerColourName": "black",
+            "footerColour": "#000000"
         }
     }
 }

@@ -1,11 +1,19 @@
 {
-    "fr": {
-      "global": {
-        "owner": "Aether89",
-        "sitetitle": "Hub Internet d’Aether89"
-      },
-      "message": {
-        "hello": "Bonjour tout le monde 🇫🇷"
-      }
+  "fr": {
+    "global": {
+      "owner": "Aether89",
+      "sitetitle": "Hub Internet d’Aether89",
+      "language": "Français 🇫🇷",
+      "aboutme": "À propos de moi",
+      "credits": "Crédits",
+      "skills": "Compétences",
+      "programs-n-applications": "Programmes et Applications",
+      "mods-n-tools": "Mods & Utilitaires",
+      "websites": "Sites Web",
+      "oldsites": "Ancien site"
+    },
+    "message": {
+      "hello": "Bonjour tout le monde 🇫🇷"
     }
+  }
 }
