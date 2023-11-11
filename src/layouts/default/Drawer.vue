@@ -1,5 +1,6 @@
 <template>
           <v-list-item
+            v-if="!mobile"
             prepend-avatar="@/assets/pogka-Aether89.webp"
             title="Aether89"
            />
@@ -16,3 +17,14 @@
             <v-list-item nav prepend-icon="mdi-license" :title="$t('global.credits')" value="credits" />
           </v-list>
   </template>
+
+  <script lang="ts">
+  export default {
+    props: {
+      mobile: {
+        type: Boolean,
+        default: false,
+      },
+    },
+  }
+  </script>

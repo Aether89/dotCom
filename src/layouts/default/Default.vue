@@ -1,7 +1,9 @@
 <template>
   <v-layout :class="layoutClass">
 
-    <v-app-bar class="px-4" color="headerColour" flat>
+    <v-app-bar color="headerColour" flat>
+      <v-app-bar-nav-icon v-if="smAndDown" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <div v-else class="px-4"></div>
       <strong>{{ $t("global.sitetitle") }}</strong>
       <v-spacer />
       <v-btn @click="langSwitch" prepend-icon="mdi-translate">
@@ -9,8 +11,12 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" expand-on-hover rail permanent @click="rail = false" color="navColour" :width="300">
-      <default-drawer />
+    <v-navigation-drawer v-if="smAndDown" v-model="drawer" permanent location="top" color="navColour" :width="300">
+      <default-drawer :mobile="true"/>
+    </v-navigation-drawer>
+
+    <v-navigation-drawer v-else v-model="drawer" expand-on-hover rail permanent @click="rail = false" color="navColour" :width="300">
+      <default-drawer :mobile="false"/>
     </v-navigation-drawer>
 
     <v-main class="d-flex align-center justify-center bg-canvasColour" style="min-height: 300px;">
@@ -20,7 +26,7 @@
   </v-layout>
 
   <default-footer />
-  
+
 </template>
 
 <script lang="ts" setup>
@@ -42,10 +48,8 @@ export default {
   methods: {
     langSwitch() {
       const locale = this.$vuetify.locale.current
-
       locale === 'en' ? this.$vuetify.locale.current = 'fr' : this.$vuetify.locale.current = 'en'
       document.title = this.$t('global.sitetitle');
-
     }
   },
   computed: {
@@ -57,7 +61,12 @@ export default {
     },
     layoutClass() {
       const size = this.smAndDown ? 2 : 6;
-      return 'rounded rounded-md mx-' + size + ' mt-' + size;
+      return 'rounded rounded-md elevation-10 mx-' + size + ' mt-' + size;
+    },
+  },
+  watch: {
+    smAndDown() {
+      this.drawer  = !this.smAndDown ? true : false;
     },
   },
   mounted() {

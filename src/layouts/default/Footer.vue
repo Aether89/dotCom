@@ -1,5 +1,5 @@
 <template>
-    <v-footer class="bg-footerColour d-flex flex-column w-100" style="max-height: 5vh;">
+    <v-footer class="bg-transparent d-flex flex-column w-100" style="max-height: 5vh;">
     <div class="text-center">
       {{ footerYear }} — <strong>{{ $t("global.owner") }}</strong>
 
