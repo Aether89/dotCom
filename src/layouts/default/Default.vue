@@ -6,10 +6,8 @@
       <div v-else class="px-4"></div>
       <strong>{{ $t("global.sitetitle") }}</strong>
       <v-spacer />
-      <v-btn @click="langSwitch" prepend-icon="mdi-translate">
-        {{ language }}
-      </v-btn>
-      <theme-switcher class="px-4"></theme-switcher>
+      <language-switcher class="mr-2" :mobile="smAndDown"></language-switcher>
+      <theme-switcher class="mr-2"></theme-switcher>
     </v-app-bar>
 
     <v-navigation-drawer v-if="smAndDown" v-model="drawer" permanent location="top" color="navColour" :width="300">
@@ -35,6 +33,7 @@ import DefaultView from './View.vue'
 import DefaultFooter from './Footer.vue'
 import DefaultDrawer from './Drawer.vue'
 import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
+import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 
 </script>
 

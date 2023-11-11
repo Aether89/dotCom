@@ -1,5 +1,8 @@
 {
   "fr": {
+    "fullname": "Français",
+    "shortname": "fr",
+    "flag": "🇫🇷",
     "$vuetify": {
       "dataIterator": {
         "rowsPerPageText": "Objets par page:",
@@ -9,10 +12,6 @@
     "global": {
       "owner": "Aether89",
       "sitetitle": "Hub Internet d’Aether89",
-      "language": {
-        "fullname": "Français",
-        "shortname": "FR"
-      },
       "aboutme": "À propos de moi",
       "credits": "Crédits",
       "skills": "Compétences",

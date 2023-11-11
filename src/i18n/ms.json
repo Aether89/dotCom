@@ -1,0 +1,28 @@
+{
+    "ms": {
+      "fullname": "Melayu",
+      "flag": "🇲🇾",
+      "shortname": "ms",
+      "$vuetify": {
+        "dataIterator": {
+          "rowsPerPageText": "Item setiap halaman:",
+          "pageText": "{0}-{1} daripada {2}"
+        }
+      },
+      "global": {
+        "owner": "Aether89",
+        "sitetitle": "Hub Internet Aether89",
+        "aboutme": "Mengenai Saya",
+        "credits": "Kredit",
+        "skills": "Kemahiran",
+        "programs-n-applications": "Program dan Aplikasi",
+        "mods-n-tools": "Mod dan Alat",
+        "websites": "Laman web",
+        "oldsites": "Laman Lama"
+      },
+      "message": {
+        "hello": "hello dunia 🇲🇾"
+      }
+    }
+  }
+  

@@ -16,7 +16,7 @@
             target="_blank" variant="flat">
             <v-icon icon="mdi-translate" size="large" start />
 
-            {{ $t("global.language.fullname") }}
+            {{ $t("fullname") }}
           </v-btn>
         </v-col>
 

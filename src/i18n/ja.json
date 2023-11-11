@@ -1,0 +1,28 @@
+{
+    "ja": {
+      "fullname": "日本語",
+      "flag": "🇯🇵",
+      "shortname": "ja",
+      "$vuetify": {
+        "dataIterator": {
+          "rowsPerPageText": "ページあたりのアイテム数:",
+          "pageText": "{0}-{1} の {2}"
+        }
+      },
+      "global": {
+        "owner": "Aether89",
+        "sitetitle": "Aether89のインターネットハブ",
+        "aboutme": "私について",
+        "credits": "クレジット",
+        "skills": "スキル",
+        "programs-n-applications": "プログラムとアプリケーション",
+        "mods-n-tools": "改造とツール",
+        "websites": "ウェブサイト",
+        "oldsites": "古いサイト"
+      },
+      "message": {
+        "hello": "こんにちは世界 🇯🇵"
+      }
+    }
+  }
+  

@@ -1,5 +1,8 @@
 {
   "en": {
+    "fullname": "English",
+    "flag": "🇬🇧",
+    "shortname": "en",
     "$vuetify": {
       "dataIterator": {
         "rowsPerPageText": "Items per page:",
@@ -9,10 +12,6 @@
     "global": {
       "owner": "Aether89",
       "sitetitle": "Aether89's Internet Hub",
-      "language": {
-        "fullname": "English",
-        "shortname": "EN"
-      },
       "aboutme": "About Me",
       "credits": "Credits",
       "skills": "Skills",
