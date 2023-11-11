@@ -1,5 +1,11 @@
 {
   "fr": {
+    "$vuetify": {
+      "dataIterator": {
+        "rowsPerPageText": "Objets par page:",
+        "pageText": "{0}-{1} de {2}"
+      }
+    },
     "global": {
       "owner": "Aether89",
       "sitetitle": "Hub Internet d’Aether89",

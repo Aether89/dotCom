@@ -1,7 +1,7 @@
 {
-    "default": {
+    "vampberry": {
         "dark": true,
-        "icon": "🌟",
+        "icon": "🍓",
         "colors": {
             "background": "#263238",
             "surface": "#FFFFFF",
@@ -14,7 +14,7 @@
             "success": "#4CAF50",
             "warning": "#FB8C00",
             "headerColour": "#424242",
-            "navColour": "#1E88E5",
+            "navColour": "#AD1457",
             "canvasColour": "212121",
             "menuColour": "333333",
             "footerColour": "#000000"

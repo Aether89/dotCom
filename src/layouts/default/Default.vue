@@ -9,18 +9,19 @@
       <v-btn @click="langSwitch" prepend-icon="mdi-translate">
         {{ language }}
       </v-btn>
+      <theme-switcher class="px-4"></theme-switcher>
     </v-app-bar>
 
     <v-navigation-drawer v-if="smAndDown" v-model="drawer" permanent location="top" color="navColour" :width="300">
-      <default-drawer :mobile="true"/>
+      <default-drawer :mobile="true"></default-drawer>
     </v-navigation-drawer>
 
     <v-navigation-drawer v-else v-model="drawer" expand-on-hover rail permanent @click="rail = false" color="navColour" :width="300">
-      <default-drawer :mobile="false"/>
+      <default-drawer :mobile="false"></default-drawer>
     </v-navigation-drawer>
 
     <v-main class="d-flex align-center justify-center bg-canvasColour" style="min-height: 300px;">
-      <default-view />
+      <default-view></default-view>
     </v-main>
 
   </v-layout>
@@ -33,7 +34,7 @@
 import DefaultView from './View.vue'
 import DefaultFooter from './Footer.vue'
 import DefaultDrawer from './Drawer.vue'
-
+import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
 
 </script>
 
