@@ -18,7 +18,14 @@
       "programs-n-applications": "Programmes et Applications",
       "mods-n-tools": "Mods & Utilitaires",
       "websites": "Sites Web",
-      "oldsites": "Ancien site"
+      "url": {
+        "aboutme": "/a-propos",
+        "credits": "/credits",
+        "skills": "/competences",
+        "programs-n-applications": "/programmes-et-applications",
+        "mods-n-tools": "/mods-et-outils",
+        "websites": "/sites-web"
+      }
     },
     "message": {
       "hello": "Bonjour tout le monde 🇫🇷"

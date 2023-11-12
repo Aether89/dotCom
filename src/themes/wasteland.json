@@ -3,7 +3,7 @@
         "dark": true,
         "icon": "☢️",
         "colors": {
-            "background": "#263238",
+            "background": "#000000",
             "surface": "#FFFFFF",
             "primary": "#6200EE",
             "primary-darken-1": "#3700B3",
@@ -13,10 +13,10 @@
             "info": "#2196F3",
             "success": "#4CAF50",
             "warning": "#FB8C00",
-            "headerColour": "#424242",
-            "navColour": "#6D4C41",
-            "canvasColour": "212121",
-            "menuColour": "333333",
+            "headerColour": "#194514",
+            "navColour": "#018900",
+            "canvasColour": "#1C2018",
+            "menuColour": "#0C7C01",
             "footerColour": "#000000"
         }
     }

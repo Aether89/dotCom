@@ -18,7 +18,14 @@
       "programs-n-applications": "Programs and Applications",
       "mods-n-tools": "Mods and Tools",
       "websites": "Websites",
-      "oldsites": "Old Site"
+      "url": {
+        "aboutme": "/aboutme",
+        "credits": "/credits",
+        "skills": "/skills",
+        "programs-n-applications": "/programs-n-applications",
+        "mods-n-tools": "/mods-n-tools",
+        "websites": "/websites"
+      }
     },
     "message": {
       "hello": "hello world 🇬🇧"

@@ -2,7 +2,7 @@ import { createI18n } from 'vue-i18n'
 import languages from '@/i18n/languages'
 
 const messages = {
-...languages
+  ...languages
 }
 
 const i18n = createI18n({

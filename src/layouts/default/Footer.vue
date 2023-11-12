@@ -1,25 +1,24 @@
 <template>
-    <v-footer class="bg-transparent d-flex flex-column w-100" style="max-height: 5vh;">
+  <v-footer class="bg-transparent d-flex flex-column w-100" style="max-height: 5vh;">
     <div class="text-center">
       {{ footerYear }} — <strong>{{ $t("global.owner") }}</strong>
-
     </div>
-    </v-footer>
+  </v-footer>
 </template>
 
 <script lang="ts">
-  export default {
+export default {
   data() {
     return {
       startingYear: 2018,
     }
   },
-computed: {
+  computed: {
 
     footerYear() {
       const year = new Date().getFullYear()
-        return year > this.startingYear ? `${this.startingYear} - ${year}` : `${this.startingYear}`;
+      return year > this.startingYear ? `${this.startingYear} - ${year}` : `${this.startingYear}`;
     }
-},
-  }
+  },
+}
 </script>

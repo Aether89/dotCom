@@ -7,9 +7,9 @@
             </template>
 
             <v-list class="pl-2 pr-6 pt-4 bg-menuColour">
-                <v-radio-group>
+                <v-radio-group v-model="selectedLanguage">
                     <div v-for="(language, languageAbr) in languages" :key="languageAbr" >
-                        <v-radio :label="`${language.fullname} ${language.flag}`" :value="languageAbr" @click="switchLanguage(languageAbr)"></v-radio>
+                        <v-radio :label="`${language.fullname} ${language.flag}`" :value="languageAbr"></v-radio>
                     </div>
                 </v-radio-group>
             </v-list>
@@ -39,6 +39,7 @@ export default {
     data() {
     return {
       menu: false,
+      selectedLanguage: 'fr',
     }
   },
     computed: {
@@ -60,5 +61,13 @@ export default {
             document.title = this.$t('global.sitetitle');
         }
     },
+    watch: {
+        selectedLanguage() {
+            this.switchLanguage(this.selectedLanguage);
+        }
+    },
+    mounted() {
+        this.selectedLanguage = this.$vuetify.locale.current;
+    }
 }
 </script>

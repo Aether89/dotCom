@@ -7,9 +7,9 @@
             </template>
 
             <v-list class="pl-2 pr-6 pt-4 bg-menuColour">
-                <v-radio-group>
+                <v-radio-group v-model="selectedTheme">
                     <div v-for="(theme, themeName) in myThemes.themes" :key="themeName" >
-                        <v-radio :label="`${theme.icon} ${themeName}`" :value="themeName" @click="switchTheme(themeName)"></v-radio>
+                        <v-radio :label="`${theme.icon} ${themeName}`" :value="themeName"></v-radio>
                     </div>
                 </v-radio-group>
             </v-list>
@@ -35,6 +35,7 @@ export default {
     data() {
     return {
       menu: false,
+      selectedTheme: '',
     }
   },
     computed: {
@@ -51,5 +52,13 @@ export default {
             this.theme.global.name.value = newTheme;
         }
     },
+    watch: {
+        selectedTheme() {
+            this.switchTheme(this.selectedTheme);
+        }
+    },
+    mounted() {
+        this.selectedTheme = this.theme.global.name.value;
+    }
 }
 </script>
