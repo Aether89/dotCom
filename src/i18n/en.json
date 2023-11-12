@@ -1,7 +1,34 @@
 {
-    "en": {
-      "message": {
-        "hello": "hello world 🇬🇧"
+  "en": {
+    "fullname": "English",
+    "flag": "🇬🇧",
+    "shortname": "en",
+    "$vuetify": {
+      "dataIterator": {
+        "rowsPerPageText": "Items per page:",
+        "pageText": "{0}-{1} de {2}"
       }
+    },
+    "global": {
+      "owner": "Aether89",
+      "sitetitle": "Aether89's Internet Hub",
+      "aboutme": "About Me",
+      "credits": "Credits",
+      "skills": "Skills",
+      "programs-n-applications": "Programs and Applications",
+      "mods-n-tools": "Mods and Tools",
+      "websites": "Websites",
+      "url": {
+        "aboutme": "/aboutme",
+        "credits": "/credits",
+        "skills": "/skills",
+        "programs-n-applications": "/programs-n-applications",
+        "mods-n-tools": "/mods-n-tools",
+        "websites": "/websites"
+      }
+    },
+    "message": {
+      "hello": "hello world 🇬🇧"
     }
+  }
 }

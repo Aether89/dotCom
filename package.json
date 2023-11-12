@@ -1,6 +1,6 @@
 {
-  "name": "dotCom",
-  "version": "0.0.0",
+  "name": "aether89-dotcom",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",

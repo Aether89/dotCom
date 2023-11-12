@@ -1,0 +1,23 @@
+{
+    "vampberry": {
+        "dark": false,
+        "icon": "🍓",
+        "colors": {
+            "background": "#282127",
+            "surface": "#FFFFFF",
+            "primary": "#6200EE",
+            "primary-darken-1": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondary-darken-1": "#018786",
+            "error": "#B00020",
+            "info": "#2196F3",
+            "success": "#4CAF50",
+            "warning": "#FB8C00",
+            "headerColour": "#3D613E",
+            "navColour": "#EA6770",
+            "canvasColour": "#1D1512",
+            "menuColour": "#818E7B",
+            "footerColour": "#000000"
+        }
+    }
+}

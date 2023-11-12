@@ -1,0 +1,8 @@
+.noLink {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.scrollable {
+  overflow-y: auto;
+}

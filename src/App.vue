@@ -1,11 +1,14 @@
 <template>
   <v-app>
-    <v-main>
-      <HelloWorld />
-    </v-main>
+      <router-view/>
   </v-app>
 </template>
 
-<script setup lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue'
+<script lang="ts">
+  export default {
+  name: 'MyComponent',
+  mounted() {
+    document.title = this.$t('global.sitetitle');
+  }
+}
 </script>

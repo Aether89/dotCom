@@ -1,7 +1,34 @@
 {
-    "fr": {
-      "message": {
-        "hello": "Bonjour tout le monde 🇫🇷"
+  "fr": {
+    "fullname": "Français",
+    "shortname": "fr",
+    "flag": "🇫🇷",
+    "$vuetify": {
+      "dataIterator": {
+        "rowsPerPageText": "Objets par page:",
+        "pageText": "{0}-{1} de {2}"
       }
+    },
+    "global": {
+      "owner": "Aether89",
+      "sitetitle": "Hub Internet d’Aether89",
+      "aboutme": "À propos de moi",
+      "credits": "Crédits",
+      "skills": "Compétences",
+      "programs-n-applications": "Programmes et Applications",
+      "mods-n-tools": "Mods & Utilitaires",
+      "websites": "Sites Web",
+      "url": {
+        "aboutme": "/a-propos",
+        "credits": "/credits",
+        "skills": "/competences",
+        "programs-n-applications": "/programmes-et-applications",
+        "mods-n-tools": "/mods-et-outils",
+        "websites": "/sites-web"
+      }
+    },
+    "message": {
+      "hello": "Bonjour tout le monde 🇫🇷"
     }
+  }
 }
