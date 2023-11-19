@@ -12,19 +12,31 @@
     "global": {
       "owner": "Aether89",
       "sitetitle": "Aether89's Internet Hub",
-      "aboutme": "About Me",
-      "credits": "Credits",
-      "skills": "Skills",
-      "programs-n-applications": "Programs and Applications",
-      "mods-n-tools": "Mods and Tools",
-      "websites": "Websites",
-      "url": {
-        "aboutme": "/aboutme",
-        "credits": "/credits",
-        "skills": "/skills",
-        "programs-n-applications": "/programs-n-applications",
-        "mods-n-tools": "/mods-n-tools",
-        "websites": "/websites"
+      "pages": {
+      "aboutme": {
+        "name": "About Me",
+        "url": "/aboutme"
+      },
+      "credits": {
+        "name": "Credits",
+        "url": "/credits"
+      },
+      "skills": {
+        "name": "Skills",
+        "url": "/skills"
+      },
+      "programs-n-applications": {
+        "name": "Programs and Applications",
+        "url": "/programs-n-applications"
+      },
+      "mods-n-tools": {
+        "name": "Mods and Tools",
+        "url": "/mods-n-tools"
+      },
+      "websites": {
+        "name": "Websites",
+        "url": "/websites"
+      }
       }
     },
     "message": {

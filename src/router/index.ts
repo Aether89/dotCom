@@ -1,5 +1,6 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+import languages from '@/i18n/languages'
 
 const routes = [
   {
@@ -9,12 +10,16 @@ const routes = [
       {
         path: '',
         name: 'Home',
-        // route level code-splitting
-        // this generates a separate chunk (Home-[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () => import('@/views/Home.vue'),
       },
-
+      // Add routes from each language
+      ...Object.keys(languages).flatMap(languageKey =>
+        Object.keys(languages[languageKey].global.pages).map(pageKey => ({
+          path: languages[languageKey].global.pages[pageKey].url,
+          name: languages[languageKey].global.pages[pageKey].name,
+          component: () => import(`@/views/${pageKey}.vue`),
+        }))
+      ),
     ],
   },
 ]

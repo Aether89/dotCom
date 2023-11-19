@@ -215,5 +215,6 @@ $RECYCLE.BIN/
 *.njsproj
 *.sln
 *.sw?
+*.code-workspace
 
 bun.lockb

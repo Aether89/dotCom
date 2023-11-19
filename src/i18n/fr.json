@@ -12,21 +12,33 @@
     "global": {
       "owner": "Aether89",
       "sitetitle": "Hub Internet d’Aether89",
-      "aboutme": "À propos de moi",
-      "credits": "Crédits",
-      "skills": "Compétences",
-      "programs-n-applications": "Programmes et Applications",
-      "mods-n-tools": "Mods & Utilitaires",
-      "websites": "Sites Web",
-      "url": {
-        "aboutme": "/a-propos",
-        "credits": "/credits",
-        "skills": "/competences",
-        "programs-n-applications": "/programmes-et-applications",
-        "mods-n-tools": "/mods-et-outils",
-        "websites": "/sites-web"
-      }
-    },
+      "pages": {
+        "aboutme": {
+          "name": "À propos de moi",
+          "url": "/aproposdemoi"
+        },
+        "credits": {
+          "name": "Crédits",
+          "url": "/credits"
+        },
+        "skills": {
+          "name": "Compétences",
+          "url": "/competences"
+        },
+        "programs-n-applications": {
+          "name": "Programmes et applications",
+          "url": "/programmesetapplications"
+        },
+        "mods-n-tools": {
+          "name": "Mods et outils",
+          "url": "/modsetoutils"
+        },
+        "websites": {
+          "name": "Sites Web",
+          "url": "/sitesweb"
+        }
+    }  
+        },
     "message": {
       "hello": "Bonjour tout le monde 🇫🇷"
     }
