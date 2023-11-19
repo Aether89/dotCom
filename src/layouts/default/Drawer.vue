@@ -8,12 +8,17 @@
       <v-divider />
     </div>
 
-    <v-list-item v-for="item in drawerItems" :key="item.value" :prepend-icon="item.icon" :title="$t(item.title)"
-      :value="item.title" @click="$emit('closeDrawer')" :to="$t(item.to)"/>
-  </v-list>
+    <v-list-item v-for="(item, key) in drawerItems" :key="key" :prepend-icon="item.icon" :title="item.name"
+  :value="key" @click="$emit('closeDrawer')" :to="item.url"></v-list-item>
+</v-list>
+
+
 </template>
 
-<script lang="ts">
+
+<script lang="ts" >
+import languages from "@/i18n/languages";
+const lang = languages;
 export default {
   emits: ['closeDrawer'],
   props: {
@@ -24,15 +29,15 @@ export default {
   },
   data() {
     return {
-      drawerItems: [
-        { icon: 'mdi-human-greeting', title: 'global.pages.aboutme.name', value: 'aboutme', to: 'global.pages.aboutme.url' },
-        { icon: 'mdi-cog-outline', title: 'global.pages.skills.name', value: 'skills', to: 'global.pages.skills.url' },
-        { icon: 'mdi-application-braces-outline', title: 'global.pages.programs-n-applications.name', value: 'programs', to: 'global.pages.programs-n-applications.url' },
-        { icon: 'mdi-puzzle-outline', title: 'global.pages.mods-n-tools.name', value: 'mods', to: 'global.pages.mods-n-tools.url' },
-        { icon: 'mdi-web', title: 'global.pages.websites.name', value: 'websites', to: 'global.pages.websites.url' },
-        { icon: 'mdi-license', title: 'global.pages.credits.name', value: 'credits', to: 'global.pages.credits.url' },
-      ],
     };
   },
+  computed: {
+  drawerItems() {
+    let currentLocale = this.$vuetify.locale.current; // Get the current locale
+    let pagesKeys = lang[currentLocale].global.pages; // Get the keys under 'pages'
+    return pagesKeys;
+  }
+}
+
 };
 </script>

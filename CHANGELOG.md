@@ -1,10 +1,57 @@
 # V1.1.0
-## New Features
+## Changes 
 
-## Fixes
+### Deleted component HelloWord.vue ("src/components/HelloWorld.vue")
+- Moved it content into Home.vue ("src/views/Home.vue").
+
+### Languages.json ("src/i18n/*.json")
+- Refactored the structure of the page information in the JSON.
+- pages that were directly in `global` and `global.url` keys are now nested under a new `pages` key.
+- Each page,is now an object with `name` and `url` keys.
+
+### Languages.ts ("src/i18n/languages.ts")
+- added an interface for how a language.json is expected to contain.
+
 ### Drawer Layout ("src/layouts/default/Drawer.vue")
 - The avatar and the v-divider have been encapsulated within a div. 
 - The v-if condition, which was initially on the router-link, has been moved to this newly created div
+- The list of item to display in the drawer is obtained from the language files
+
+## New Features
+### Routing (¨src/router/index.ts")
+- create route for each pages in the languages files,
+    - path is the url.
+    - name is name.
+    - component is the key.
+
+
+## Adding New Pages
+
+Follow these steps to add a new page:
+
+1. **Create a Vue File for the New Page**:
+    - Navigate to the `src/view/` directory.
+    - Create a new Vue file for the desired language.
+
+2. **Register the New Page in Language Files**:
+    - Navigate to the `src/i18n/` directory.
+    - Under the `pages` key, add an entry for the new page. This entry should be an object with `name`, `url` and `icon` properties.
+
+Here's an example of how to add a new page:
+
+```javascript
+// Example:
+// pages = {
+//   ...,
+//   newPage: {
+//     "name": "New Page",
+//     "url": "/newpage"
+//     "icon": "mdi-web-box"
+//   },
+//   ...
+// };
+```
+Remember to replace `newPage`, `New Page`, and `/newpage` with the actual key, display name, and URL of your new page, respectively. The `...` indicates other page entries that might already exist in the `pages` object.
 
 # V1.0.0
 ## New Features

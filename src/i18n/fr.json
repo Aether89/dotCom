@@ -15,32 +15,38 @@
       "pages": {
         "aboutme": {
           "name": "À propos de moi",
-          "url": "/aproposdemoi"
-        },
-        "credits": {
-          "name": "Crédits",
-          "url": "/credits"
+          "url": "/aproposdemoi",
+          "icon": "mdi-human-greeting"
         },
         "skills": {
           "name": "Compétences",
-          "url": "/competences"
+          "url": "/competences",
+          "icon": "mdi-cog-outline"
         },
         "programs-n-applications": {
           "name": "Programmes et applications",
-          "url": "/programmesetapplications"
+          "url": "/programmesetapplications",
+          "icon": "mdi-application-braces-outline"
         },
         "mods-n-tools": {
           "name": "Mods et outils",
-          "url": "/modsetoutils"
+          "url": "/modsetoutils",
+          "icon": "mdi-puzzle-outline"
         },
         "websites": {
           "name": "Sites Web",
-          "url": "/sitesweb"
+          "url": "/sitesweb",
+          "icon": "mdi-web"
+        },
+        "credits": {
+          "name": "Crédits",
+          "url": "/credits",
+          "icon": "mdi-license"
         }
     }  
         },
     "message": {
-      "hello": "Bonjour tout le monde 🇫🇷"
+      "hello": "Bienvenue sur le Hub Internet d’Aether89"
     }
   }
 }

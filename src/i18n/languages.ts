@@ -16,7 +16,7 @@ interface LanguageData {
       [key: string]: {
         name: string;
         url: string;
-        component: string;
+        icon: string;
       };
     };
   };
