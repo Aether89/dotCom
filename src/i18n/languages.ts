@@ -1,69 +1,69 @@
 import { LocaleMessages } from "vue-i18n";
 import LanguageData from '@/Interface/LanguageData';
 
-const en = await import('./en.json');
-const en_aboutme = await import ('./views/en/aboutme.json')
-const fr = await import('./fr.json');
-const fr_aboutme = await import ('./views/fr/aboutme.json')
+import en from './en.json';
+import en_aboutme from'./views/en/aboutme.json';
+import fr from './fr.json';
+import fr_aboutme from './views/fr/aboutme.json';
 
 const enMerged = {
-  ...en.default,
+  ...en,
     pages: {
-      ...en.default.pages,
+      ...en.pages,
       "aboutme": {
-        ...en.default.pages["aboutme"],
-        ...en_aboutme.default
+        ...en.pages["aboutme"],
+        ...en_aboutme
       },
       "skills": {
-        ...en.default.pages["skills"],
-        ...en_aboutme.default
+        ...en.pages["skills"],
+        ...en_aboutme
       },
       "programs-n-applications": {
-        ...en.default.pages["programs-n-applications"],
-        ...en_aboutme.default
+        ...en.pages["programs-n-applications"],
+        ...en_aboutme
       },
       "mods-n-tools": {
-        ...en.default.pages["mods-n-tools"],
-        ...en_aboutme.default
+        ...en.pages["mods-n-tools"],
+        ...en_aboutme
       },
       "websites": {
-        ...en.default.pages["websites"],
-        ...en_aboutme.default
+        ...en.pages["websites"],
+        ...en_aboutme
       },
       "credits": {
-        ...en.default.pages["credits"],
-        ...en_aboutme.default
+        ...en.pages["credits"],
+        ...en_aboutme
       }
   }
 };
 
 const frMerged = {
-  ...fr.default,
+  ...fr,
     pages: {
-      ...fr.default.pages,
+      ...fr.pages,
       "aboutme": {
-        ...fr.default.pages["aboutme"],
-        ...fr_aboutme.default
+        ...fr.pages["aboutme"],
+        ...fr_aboutme
       },
       "skills": {
-        ...fr.default.pages["skills"],
-        ...fr_aboutme.default
+        ...fr.pages["skills"],
+        ...fr_aboutme
       },
       "programs-n-applications": {
-        ...fr.default.pages["programs-n-applications"],
-        ...fr_aboutme.default
+        ...fr.pages["programs-n-applications"],
+        ...fr_aboutme
       },
       "mods-n-tools": {
-        ...fr.default.pages["mods-n-tools"],
-        ...fr_aboutme.default
+        ...fr.pages["mods-n-tools"],
+        ...fr_aboutme
       },
       "websites": {
-        ...fr.default.pages["websites"],
-        ...fr_aboutme.default
+        ...fr.pages["websites"],
+        ...fr_aboutme
       },
       "credits": {
-        ...fr.default.pages["credits"],
-        ...fr_aboutme.default
+        ...fr.pages["credits"],
+        ...fr_aboutme
       }
   }
 };

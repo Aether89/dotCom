@@ -15,7 +15,8 @@
       "DOM"
     ],
     "types": [
-      "vue-i18n"
+      "vue-i18n",
+      "node"
     ],
     "skipLibCheck": true,
     "noEmit": true,
