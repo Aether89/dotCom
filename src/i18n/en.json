@@ -13,36 +13,36 @@
       "owner": "Aether89",
       "sitetitle": "Aether89's Internet Hub",
       "pages": {
-      "aboutme": {
-        "name": "About Me",
-        "url": "/aboutme",
-        "icon": "mdi-human-greeting"
-      },
-      "skills": {
-        "name": "Skills",
-        "url": "/skills",
-        "icon": "mdi-cog-outline"
-      },
-      "programs-n-applications": {
-        "name": "Programs and Applications",
-        "url": "/programs-n-applications",
-        "icon": "mdi-application-braces-outline"
-      },
-      "mods-n-tools": {
-        "name": "Mods and Tools",
-        "url": "/mods-n-tools",
-        "icon": "mdi-puzzle-outline"
-      },
-      "websites": {
-        "name": "Websites",
-        "url": "/websites",
-        "icon": "mdi-web"
-      },
-      "credits": {
-        "name": "Credits",
-        "url": "/credits",
-        "icon": "mdi-license"
-      }
+        "aboutme": {
+          "name": "About Me",
+          "url": "/aboutme",
+          "icon": "mdi-human-greeting"
+        },
+        "skills": {
+          "name": "Skills",
+          "url": "/skills",
+          "icon": "mdi-cog-outline"
+        },
+        "programs-n-applications": {
+          "name": "Programs and Applications",
+          "url": "/programs-n-applications",
+          "icon": "mdi-application-braces-outline"
+        },
+        "mods-n-tools": {
+          "name": "Mods and Tools",
+          "url": "/mods-n-tools",
+          "icon": "mdi-puzzle-outline"
+        },
+        "websites": {
+          "name": "Websites",
+          "url": "/websites",
+          "icon": "mdi-web"
+        },
+        "credits": {
+          "name": "Credits",
+          "url": "/credits",
+          "icon": "mdi-license"
+        }
       }
     },
     "message": {

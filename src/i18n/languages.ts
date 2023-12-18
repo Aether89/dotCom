@@ -1,43 +1,15 @@
 // Define the structure of your language data
-interface LanguageData {
-  fullname: string;
-  shortname: string;
-  flag: string;
-  $vuetify: {
-    dataIterator: {
-      rowsPerPageText: string;
-      pageText: string;
-    };
-  };
-  global: {
-    owner: string;
-    sitetitle: string;
-    pages: {
-      [key: string]: {
-        name: string;
-        url: string;
-        icon: string;
-      };
-    };
-  };
-  message: {
-    hello: string;
-  };
-}
-
-// Define the structure of your language files
-interface LanguageFile {
-  [key: string]: LanguageData;
-}
+import { LocaleMessages } from "vue-i18n";
+import LanguageData from '@/Interface/LanguageData';
 
 // Import your JSON files
 import en from './en.json';
 import fr from './fr.json';
 
-// Specify the type of your imported JSON files
-const languages: LanguageFile = {
-  ...en as LanguageFile,
-  ...fr as LanguageFile,
+// Specify the type of your imported JSON files using LocaleMessage
+const languages: LocaleMessages<LanguageData> = {
+  ...en as LocaleMessages<LanguageData>,
+  ...fr as LocaleMessages<LanguageData>,
 };
 
 export default languages;
