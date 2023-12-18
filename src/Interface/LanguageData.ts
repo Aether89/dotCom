@@ -1,3 +1,12 @@
+// Define an interface for each page object
+interface Page {
+  name: string;
+  url: string;
+  icon: string;
+  [key: string]: string;
+}
+
+// Define the structure of your language data
 interface LanguageData {
   [key: string]: string | { [key: string]: any };
   fullname: string;
@@ -9,20 +18,14 @@ interface LanguageData {
       pageText: string;
     };
   };
-  global: {
-    owner?: string; // Optional property
-    sitetitle?: string; // Optional property
+    owner: string;
+    sitetitle: string;
     pages: {
-      [key: string]: {
-        name: string;
-        url: string;
-        icon: string;
-      };
+      [key: string]: Page;
     };
-  };
   message: {
     hello: string;
   };
 }
 
-  export default LanguageData;
+export default LanguageData;

@@ -1,52 +1,48 @@
 {
-  "en": {
-    "fullname": "English",
-    "flag": "🇬🇧",
-    "shortname": "en",
-    "$vuetify": {
-      "dataIterator": {
-        "rowsPerPageText": "Items per page:",
-        "pageText": "{0}-{1} de {2}"
-      }
-    },
-    "global": {
-      "owner": "Aether89",
-      "sitetitle": "Aether89's Internet Hub",
-      "pages": {
-        "aboutme": {
-          "name": "About Me",
-          "url": "/aboutme",
-          "icon": "mdi-human-greeting"
-        },
-        "skills": {
-          "name": "Skills",
-          "url": "/skills",
-          "icon": "mdi-cog-outline"
-        },
-        "programs-n-applications": {
-          "name": "Programs and Applications",
-          "url": "/programs-n-applications",
-          "icon": "mdi-application-braces-outline"
-        },
-        "mods-n-tools": {
-          "name": "Mods and Tools",
-          "url": "/mods-n-tools",
-          "icon": "mdi-puzzle-outline"
-        },
-        "websites": {
-          "name": "Websites",
-          "url": "/websites",
-          "icon": "mdi-web"
-        },
-        "credits": {
-          "name": "Credits",
-          "url": "/credits",
-          "icon": "mdi-license"
-        }
-      }
-    },
-    "message": {
-      "hello": "Welcome to Aether89's Internet Hub"
+  "fullname": "English",
+  "flag": "🇬🇧",
+  "shortname": "en",
+  "$vuetify": {
+    "dataIterator": {
+      "rowsPerPageText": "Items per page:",
+      "pageText": "{0}-{1} de {2}"
     }
+  },
+  "owner": "Aether89",
+  "sitetitle": "Aether89's Internet Hub",
+  "pages": {
+    "aboutme": {
+      "name": "About Me",
+      "url": "/aboutme",
+      "icon": "mdi-human-greeting"
+    },
+    "skills": {
+      "name": "Skills",
+      "url": "/skills",
+      "icon": "mdi-cog-outline"
+    },
+    "programs-n-applications": {
+      "name": "Programs and Applications",
+      "url": "/programs-n-applications",
+      "icon": "mdi-application-braces-outline"
+    },
+    "mods-n-tools": {
+      "name": "Mods and Tools",
+      "url": "/mods-n-tools",
+      "icon": "mdi-puzzle-outline"
+    },
+    "websites": {
+      "name": "Websites",
+      "url": "/websites",
+      "icon": "mdi-web"
+    },
+    "credits": {
+      "name": "Credits",
+      "url": "/credits",
+      "icon": "mdi-license"
+    }
+  },
+  "message": {
+    "hello": "Welcome to Aether89's Internet Hub"
   }
 }

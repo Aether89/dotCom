@@ -54,11 +54,11 @@ export default {
         toggleLanguage() {
             const locale = this.$vuetify.locale.current
       locale === 'en' ? this.$vuetify.locale.current = 'fr' : this.$vuetify.locale.current = 'en'
-      document.title = this.$t('global.sitetitle');
+      document.title = this.$t('sitetitle');
         },
         switchLanguage(language: string) {
             this.$vuetify.locale.current = language;
-            document.title = this.$t('global.sitetitle');
+            document.title = this.$t('sitetitle');
         }
     },
     watch: {

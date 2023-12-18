@@ -8,7 +8,7 @@
   export default {
   name: 'MyComponent',
   mounted() {
-    document.title = this.$t('global.sitetitle');
+    document.title = this.$t('sitetitle');
   }
 }
 </script>

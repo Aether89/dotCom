@@ -4,7 +4,7 @@
     <v-app-bar color="headerColour" flat>
       <v-app-bar-nav-icon v-if="smAndDown" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <div v-else class="px-4"></div>
-      <router-link class="noLink" to="/"><strong>{{ $t("global.sitetitle") }}</strong></router-link>
+      <router-link class="noLink" to="/"><strong>{{ $t("sitetitle") }}</strong></router-link>
       <v-spacer />
       <language-switcher class="mr-2" :mobile="smAndDown"></language-switcher>
       <theme-switcher class="mr-2"></theme-switcher>
@@ -49,7 +49,7 @@ export default {
     langSwitch(): void {
       const locale = this.$vuetify.locale.current
       locale === 'en' ? this.$vuetify.locale.current = 'fr' : this.$vuetify.locale.current = 'en'
-      document.title = this.$t('global.sitetitle');
+      document.title = this.$t('sitetitle');
     },
     drawerToggleMobile(): void {
       this.drawer = !this.smAndDown ? true : false;
@@ -60,7 +60,7 @@ export default {
       return this.$vuetify.display.smAndDown ? true : false;
     },
     language(): string {
-      return this.smAndDown ? this.$t('global.language.shortname') : this.$t('global.language.fullname')
+      return this.smAndDown ? this.$t('language.shortname') : this.$t('global.language.fullname')
     },
     layoutClass(): string {
       const size = this.smAndDown ? 2 : 6;

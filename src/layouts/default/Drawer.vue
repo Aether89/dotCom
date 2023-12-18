@@ -34,7 +34,7 @@ export default {
   computed: {
   drawerItems() {
     let currentLocale = this.$vuetify.locale.current; // Get the current locale
-    let pagesKeys = lang[currentLocale].global.pages; // Get the keys under 'pages'
+    let pagesKeys = lang[currentLocale].pages; // Get the keys under 'pages'
     return pagesKeys;
   }
 }

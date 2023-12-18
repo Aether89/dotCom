@@ -5,7 +5,7 @@
  */
 
 // Plugins
-import i18n from './vue-i18n'
+import i18n from './vue-i18n';
 import vuetify from './vuetify'
 import pinia from '../store'
 import router from '../router'

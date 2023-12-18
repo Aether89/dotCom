@@ -14,9 +14,9 @@ const routes = [
       },
       // Add routes from each language
       ...Object.keys(languages).flatMap(languageKey =>
-        Object.keys(languages[languageKey].global.pages).map(pageKey => ({
-          path: languages[languageKey].global.pages[pageKey].url,
-          name: languages[languageKey].global.pages[pageKey].name,
+        Object.keys(languages[languageKey].pages).map(pageKey => ({
+          path: languages[languageKey].pages[pageKey].url,
+          name: languages[languageKey].pages[pageKey].name,
           component: () => import(`@/views/${pageKey}.vue`),
         }))
       ),
